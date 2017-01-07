@@ -4,8 +4,11 @@ body {
 
 ul {
   margin: 10px;
-  padding: 40px;
+  padding: 0px;
   list-style: none; }
   ul li {
-    display: inline-block;
-    color: blue; }
+    color: blue;
+    padding: 20px;
+    color: black;
+    background-color: coral;
+    display: inline-block; }
