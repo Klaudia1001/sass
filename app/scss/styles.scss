@@ -22,3 +22,15 @@ body {
         }
     }
 
+#technologie {
+    padding: 40px;
+    margin: 0px;
+    
+    li {
+        @include elementListy;
+        display: block;
+        background-color: cornflowerblue;
+    }
+  }
+
+

@@ -12,3 +12,13 @@ ul {
     color: black;
     background-color: coral;
     display: inline-block; }
+
+#technologie {
+  padding: 40px;
+  margin: 0px; }
+  #technologie li {
+    padding: 20px;
+    color: black;
+    background-color: coral;
+    display: block;
+    background-color: cornflowerblue; }
