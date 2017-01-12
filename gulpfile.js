@@ -1,5 +1,6 @@
 var gulp=require('gulp'); //tworzy środowisko gulpa
 var sass=require('gulp-sass');
+var uglifycss= require('gulp-uglifycss');
 
 var browserSync=require('browser-sync').create();
 
@@ -26,4 +27,13 @@ gulp.task('sass', function (){
 
 gulp.task('watch', ["browserSync", "sass"], function(){
 gulp.watch('app/scss/**/*.scss',['sass']);
+});
+
+gulp.task('css', function () {
+  gulp.src('./styles/**/*.css')
+    .pipe(uglifycss({
+      "maxLineLen": 80,
+      "uglyComments": true
+    }))
+    .pipe(gulp.dest('./dist/'));
 });
